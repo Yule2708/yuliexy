@@ -1,7 +1,7 @@
 print("¡Bienvenido a 'La Isla del Misterio'!")
 print("Naufragas en una isla desconocida. A tu alrededor hay una selva densa, una playa desierta y restos de tu barco.\n")
 print("INSTRUCCIONES:")
-print("- Responde usando SOLO las PALABRAS CLAVE en mayúsculas")
+print("- Responde usando SOLO las PALABRAS CLAVE")
 print("- O escribe la LETRA entre paréntesis\n")
 
 # Nivel 1 - Elección inicial
