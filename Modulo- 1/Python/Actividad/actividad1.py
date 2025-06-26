@@ -10,7 +10,7 @@ print("(S) SELVA: Explorar la densa vegetación")
 print("(P) PLAYA: Recorrer la orilla")
 print("(R) RESTOS: Investigar los restos del barco")
 
-opcion = input("\nEscribe tu elección: ").lower()
+opcion = input("\nEscribe tu elección: ")
 
 if opcion in ["s", "selva"]:
     # Nivel 2 - Rama SELVA
@@ -19,7 +19,7 @@ if opcion in ["s", "selva"]:
     print("(C) CUEVA: Una cueva oscura")
     print("(G) SEGUIR: Huellas de animal que puedes seguir")
     
-    opcion_selva = input("\n¿Qué investigas? ").lower()
+    opcion_selva = input("\n¿Qué investigas? ")
     
     if opcion_selva in ["f", "fruto"]:
         # Nivel 3 - Rama FRUTO
@@ -27,7 +27,7 @@ if opcion in ["s", "selva"]:
         print("(T) TEMPLO: Un templo antiguo")
         print("(A) ALDEA: Una aldea abandonada")
         
-        final = input("\n¿Hacia dónde vas? ").lower()
+        final = input("\n¿Hacia dónde vas? ")
         if final in ["t", "templo"]:
             print("\n¡Encuentras un tesoro ancestral! Los dioses te bendicen. VIVES para contarlo. (FIN)")
         elif final in ["a", "aldea"]:
@@ -41,7 +41,7 @@ if opcion in ["s", "selva"]:
         print("(P) PINTURAS: Pinturas rupestres")
         print("(U) TUNEL: Un túnel subterráneo")
         
-        cueva_opcion = input("\n¿Qué examinas? ").lower()
+        cueva_opcion = input("\n¿Qué examinas? ")
         if cueva_opcion in ["p", "pinturas"]:
             print("\nDescifras un mapa secreto. ¡Encuentras la civilización perdida! (FIN)")
         elif cueva_opcion in ["u", "tunel"]:
@@ -55,7 +55,7 @@ if opcion in ["s", "selva"]:
         print("(A) AYUDAR: Un jaguar herido")
         print("(B) BOTE: Una cascada con un bote")
         
-        huellas_opcion = input("\n¿Qué acción tomas? ").lower()
+        huellas_opcion = input("\n¿Qué acción tomas? ")
         if huellas_opcion in ["a", "ayudar"]:
             print("\nEl jaguar te guía a un santuario seguro. ¡Eres adoptado por la manada! (FIN)")
         elif huellas_opcion in ["b", "bote"]:
@@ -72,7 +72,7 @@ elif opcion in ["p", "playa"]:
     print("(B) BOTELLA: Abrir la botella")
     print("(I) PIRAMIDES: Examinar las construcciones")
     
-    playa_opcion = input("\n¿Qué investigas? ").lower()
+    playa_opcion = input("\n¿Qué investigas? ")
     
     if playa_opcion in ["b", "botella"]:
         # Nivel 3 - Rama BOTELLA
@@ -80,7 +80,7 @@ elif opcion in ["p", "playa"]:
         print("(C) CONSTRUIR: Construir una balsa")
         print("(E) ESPERAR: Esperar rescate")
         
-        botella_opcion = input("\n¿Qué decides? ").lower()
+        botella_opcion = input("\n¿Qué decides? ")
         if botella_opcion in ["c", "construir"]:
             print("\n¡Llegas a una ruta comercial! Regresas a casa como héroe. (FIN)")
         elif botella_opcion in ["e", "esperar"]:
@@ -94,7 +94,7 @@ elif opcion in ["p", "playa"]:
         print("(A) ARTEFACTO: Un artefacto metálico")
         print("(T) TUNEL: Un túnel oculto")
         
-        piram_opcion = input("\n¿Qué eliges? ").lower()
+        piram_opcion = input("\n¿Qué eliges? ")
         if piram_opcion in ["a", "artefacto"]:
             print("\n¡Activas un mecanismo alienígena! Te teletransportas a otra dimensión. (FIN)")
         elif piram_opcion in ["t", "tunel"]:
@@ -111,7 +111,7 @@ elif opcion in ["r", "restos"]:
     print("(R) RADIO: Un radio averiado")
     print("(D) DIARIO: El diario del capitán")
     
-    restos_opcion = input("\n¿Qué examinas? ").lower()
+    restos_opcion = input("\n¿Qué examinas? ")
     
     if restos_opcion in ["r", "radio"]:
         # Nivel 3 - Rama RADIO
@@ -119,7 +119,7 @@ elif opcion in ["r", "restos"]:
         print("(G) GUARDACOSTAS: Guardacostas locales")
         print("(M) BUQUE: Buque mercante")
         
-        radio_opcion = input("\n¿Qué señal envías? ").lower()
+        radio_opcion = input("\n¿Qué señal envías? ")
         if radio_opcion in ["g", "guardacostas"]:
             print("\n¡Rescate exitoso! Te dan medalla al valor. (FIN)")
         elif radio_opcion in ["m", "buque"]:
@@ -133,7 +133,7 @@ elif opcion in ["r", "restos"]:
         print("(V) VOLCAN: Volcán activo")
         print("(L) LABORATORIO: Laboratorio secreto")
         
-        diario_opcion = input("\n¿Qué investigas? ").lower()
+        diario_opcion = input("\n¿Qué investigas? ")
         if diario_opcion in ["v", "volcan"]:
             print("\nDescubres cristales de poder. ¡Controlas los elementos! (FIN)")
         elif diario_opcion in ["l", "laboratorio"]:
