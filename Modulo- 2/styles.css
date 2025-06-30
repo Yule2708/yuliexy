@@ -1,0 +1,19 @@
+.titulo_de_la_pagina {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: blue;
+}
+
+.contenedor{
+    background-color: aqua;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: darkgoldenrod;
+    border: coral 5px;
+    border-color: chocolate;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 2%;
+}

@@ -1,0 +1,19 @@
+.fondo{
+    background-color: darkmagenta;
+}
+
+.x{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+
+.foto{
+    width: 400px;
+    float:right ;
+}
+
+.y{
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
