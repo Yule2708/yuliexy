@@ -9,8 +9,9 @@
 }
 
 .foto{
-    width: 400px;
+    width: 250px;
     float:right ;
+    border-radius: 15px;
 }
 
 .y{
