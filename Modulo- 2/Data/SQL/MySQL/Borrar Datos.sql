@@ -13,4 +13,4 @@ DELETE FROM usuarios WHERE activo = FALSE;
 -- O si quieres borrar todos los usuarios (¡CUIDADO! Esto eliminará toda la tabla):
 -- DELETE FROM usuarios;
 -- Nota: En MySQL, si quieres eliminar la tabla completa y no solo los datos, usarías:
--- DROP TABLE usuarios;
+DROP TABLE usuarios;
