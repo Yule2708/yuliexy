@@ -1,0 +1,22 @@
+.fondo{
+    background-color:  #f0f0f0;
+}
+
+.titulo{
+    text-align: center;
+    color: #8f0404 ;
+}
+
+.parrafo1{
+    font-size: 18px;
+}
+
+.parrafo2{
+    font-size: 18px;
+}
+
+.foto{
+    width: 650px;
+    float: center;
+    border-radius: 15px;
+}

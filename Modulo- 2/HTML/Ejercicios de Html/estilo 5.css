@@ -1,0 +1,27 @@
+.fondo{
+    background-color:  #f0f0f0;
+}
+
+.titulo{
+    text-align: center;
+    color: #8f0404 ;
+}
+
+.destacado{
+    background-color: yellow;
+    font-size: 18px;
+}
+
+.parrafo2{
+    font-size: 18px;
+}
+
+#resumen{
+    background-color: aquamarine;
+}
+
+.foto{
+    width: 650px;
+    float: center;
+    border-radius: 15px;
+}
