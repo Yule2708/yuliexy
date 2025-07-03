@@ -40,10 +40,15 @@ let stock1= 2;
 let multiplicacion = precio1 * stock1; 
 const envioGratis1 = true
 
+let impuesto = 0.07;
+let subtotal = multiplicacion;
+let totalFinal = subtotal + (subtotal * impuesto);
 
 console.log(`Nombre del producto: ${nombre_del_producto1}`);
 console.log(`Precio: ${precio1}`);
 console.log(`Multiplicación: ${multiplicacion}`);
+console.log(`Subtotal: ${subtotal.toFixed(2)}`);
+console.log(`Total final: ${totalFinal.toFixed(2)}`);
 
 
 // 3️⃣ Verificación de Edad para Conducir
@@ -54,6 +59,18 @@ console.log(`Multiplicación: ${multiplicacion}`);
 //- Si es mayor o igual a 18, muestra en consola: **"Puedes obtener tu licencia de conducir."**
 //- Si es menor de 18, muestra: **"Aún no tienes la edad para obtener la licencia."**
 
+let edadUsuario = 20;
+
+if (edadUsuario >= 18) {
+
+    console.log("Puedes obtener tu licencia de conducir.");
+
+}
+else {
+
+    console.log("Aún no tienes la edad para obtener la licencia.");
+    
+}
 
 // 4️⃣ Sistema de Semáforo
 
