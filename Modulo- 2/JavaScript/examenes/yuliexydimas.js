@@ -82,6 +82,25 @@ else {
 //- Si es "rojo", muestra **"Debe detenerse."**
 //- Si es cualquier otro color, muestra **"Color no válido."**
 
+let colorSemaforo = "verde";
+
+if (colorSemaforo === "verde") {
+
+    console.log("Puede avanzar.");
+
+} else if (colorSemaforo === "amarillo") {
+
+    console.log("Reduzca la velocidad, precaución.");
+
+} else if (colorSemaforo === "rojo") {
+
+    console.log("Debe detenerse.");
+
+} else {
+    
+    console.log("Color no válido.");
+
+}
 
 //## 5️⃣ Menú del Día con switch
 
