@@ -66,6 +66,7 @@ def main():
     
     carrito={}
     print("Bienvenido a la tienda de maquillaje")
+    
     while True:
         opcion = mostrar_menu()
         if opcion == '1':
