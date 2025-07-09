@@ -223,12 +223,58 @@ float calcularAreaRectangulo(float base, float altura) {
 
 //📚 Temas: Paso por valor vs. Paso por referencia, Funciones.
 
+#include <iostream>
+
+void modificarPorValor(int num) {
+    num += 25;
+}
+
+void modificarPorReferencia(int &num) {
+    num += 25;
+}
+
+int main() {
+    int numero = 20;
+    std::cout << "Valor original: " << numero << std::endl;
+
+    modificarPorValor(numero);
+    std::cout << "Después de modificarPorValor: " << numero << " (Sin Nungun Cambio)"<< std::endl;
+
+    modificarPorReferencia(numero);
+    std::cout << "Después de modificarPorReferencia: " << numero <<" (Modificado)" << std::endl;
+
+    return 0;
+}
+
 //🍽️ Ejercicio 9: Librerías vector y string
 //Escribe un programa que pida al usuario que ingrese 3 de sus comidas favoritas. 
 //Almacena cada comida en un vector de tipo string. Después de que el usuario haya ingresado las tres, 
 //utiliza un bucle para recorrer el vector e imprimir cada una de las comidas en la consola.
 
 //📚 Temas: Librería vector, Librería string, Bucles.
+
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main() {
+    vector<string> comidas;
+    string comida;
+
+    for (int i = 0; i < 3; i++) {
+        cout << "Ingrese una comida favorita: ";
+        getline(cin, comida);
+        comidas.push_back(comida);
+    }
+
+    cout << "\nTus comidas favoritas son:\n";
+    for (string c : comidas) {
+        cout << "- " << c << endl;
+    }
+
+    return 0;
+}
 
 //🧮 Ejercicio 10: Constantes const y Funciones void
 //Crea un programa para calcular el perímetro de un círculo.
