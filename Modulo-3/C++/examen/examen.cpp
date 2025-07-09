@@ -191,6 +191,27 @@ int main() {
 
 //📚 Temas: Declaración y Definición de Funciones, Función que devuelve valor y recibe parámetros.
 
+#include <iostream>
+
+float calcularAreaRectangulo(float base, float altura);  // Prototipo
+
+int main() {
+    float base, altura;
+    std::cout << "Ingrese la base: ";
+    std::cin >> base;
+    std::cout << "Ingrese la altura: ";
+    std::cin >> altura;
+
+    float area = calcularAreaRectangulo(base, altura);
+    std::cout << "Área del rectángulo: " << area << std::endl;
+
+    return 0;
+}
+
+float calcularAreaRectangulo(float base, float altura) {
+    return base * altura;
+}
+
 //🔄 Ejercicio 8: Paso por Valor vs. Paso por Referencia
 //Crea un programa que demuestre la diferencia entre el paso por valor y el paso por referencia.
 //- Define una función void llamada modificarPorValor que reciba un entero por valor 
