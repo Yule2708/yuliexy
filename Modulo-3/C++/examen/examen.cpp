@@ -284,3 +284,22 @@ int main() {
 //- Desde main, pide al usuario el radio y llama a la función calcularPerimetro.
 
 //📚 Temas: const, Función que no devuelve valor, Parámetros de función.
+
+#include <iostream>
+
+const double PI = 3.14159;
+
+void calcularPerimetro(double radio) {
+    double perimetro = 2 * PI * radio;
+    std::cout << "Perímetro del círculo: " << perimetro << std::endl;
+}
+
+int main() {
+    double radio;
+    std::cout << "Ingrese el radio del círculo: ";
+    std::cin >> radio;
+
+    calcularPerimetro(radio);
+
+    return 0;
+}
