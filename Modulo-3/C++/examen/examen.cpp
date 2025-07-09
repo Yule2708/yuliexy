@@ -117,6 +117,27 @@ int main() {
 
 //📚 Temas: Bucle while, Condicionales, Variables.
 
+#include <iostream>
+
+int main() {
+    int numeroSecreto = 20;
+    int intento = 0;
+
+    std::cout << "Adivina el número secreto: ";
+    std::cin >> intento;
+
+    while (intento != numeroSecreto) {
+        if (intento < numeroSecreto)
+            std::cout << "Más alto. Intenta de nuevo: ";
+        else
+            std::cout << "Más bajo. Intenta de nuevo: ";
+        std::cin >> intento;
+    }
+
+    std::cout << "¡Correcto! Has adivinado el número." << std::endl;
+    return 0;
+}
+
 //📋 Ejercicio 6: Bucle do-while y switch
 //Escribe un programa que muestre un menú simple con tres opciones:
 //1. Saludar
@@ -129,6 +150,37 @@ int main() {
 // el mensaje correspondiente.
 
 //📚 Temas: Bucle do-while, Condicionales switch, iostream.
+
+#include <iostream>
+
+int main() {
+    int opcion;
+
+    do {
+        std::cout << "\n Menu: " << std::endl;
+        std::cout << "1. Saludar" << std::endl;
+        std::cout << "2. Despedirse" << std::endl;
+        std::cout << "3. Salir" << std::endl;
+        std::cout << "Elige una opcion: ";
+        std::cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                std::cout << "¡Hola!" << std::endl;
+                break;
+            case 2:
+                std::cout << "¡Adiós!" << std::endl;
+                break;
+            case 3:
+                std::cout << "Saliendo del programa..." << std::endl;
+                break;
+            default:
+                std::cout << "Opción no válida." << std::endl;
+        }
+    } while (opcion != 3);
+
+    return 0;
+}
 
 //📐 Ejercicio 7: Funciones con Valor de Retorno
 //Desarrolla un programa que contenga una función llamada calcularAreaRectangulo.
