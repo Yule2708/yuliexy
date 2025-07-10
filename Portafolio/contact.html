@@ -109,14 +109,18 @@
             </div>
             </div>
             </div>
-              <from action="" class="contact-from grid">
+              <from action="" class="contact-from grid" id="contact-form">
             <div class="contact-group grid">
               <div class="contact-from-div">
                 <label for="" class="contact-from-label">
                   Your Full Name <b>*</b>
                 </label>
 
-                <input type="text" class="contact-from-input">
+                <input 
+                type="text" 
+                class="contact-from-input" 
+                name="name" 
+                id="contact-name">
               </div>
 
               <div class="contact-from-div">
@@ -124,7 +128,7 @@
                   Your Email Address <b>*</b>
                 </label>
 
-                <input type="email" class="contact-from-input">
+                <input type="email" class="contact-from-input" name="email" id="contact-email">
               </div>
 
               <div class="contact-from-div">
@@ -132,7 +136,11 @@
                   Your Subject <b>*</b>
                 </label>
 
-                <input type="text" class="contact-from-input">
+                <input 
+                type="text" 
+                class="contact-from-input" 
+                name="subject" 
+                id="contact-subject">
               </div>
 
               <div class="contact-from-div">
@@ -140,7 +148,10 @@
                   Your Message <b>*</b>
                 </label>
 
-                <textarea class="contact-from-input contact-from-area"></textarea>
+                <textarea 
+                class="contact-from-input contact-from-area" 
+                name="message"
+                id="contact-message"></textarea>
               </div>
 
               <button class="button contact-button">
@@ -150,7 +161,7 @@
                 </span>
               </button>
 
-              <p class="contact-message">Write all the input fields</p>
+              <p class="contact-message" id="message"></p>
             </div>
               </from>
 

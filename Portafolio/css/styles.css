@@ -642,6 +642,11 @@ img {
     font-size: var(--small-font-size);
 }
 
+.color-red {
+    color: hsl(2, 76%, 53%)
+
+}
+
 
 /*=============== STYLE SWITCHER ===============*/
 
