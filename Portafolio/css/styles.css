@@ -647,6 +647,9 @@ img {
 
 }
 
+.color-first {
+    color: var(--first-color)
+}
 
 /*=============== STYLE SWITCHER ===============*/
 
