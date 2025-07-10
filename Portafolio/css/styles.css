@@ -312,7 +312,52 @@ img {
     margin-bottom: 2.25rem;
 }
 
+.info-title,
+.info-description{
+    font-size: var(--small-font-size);
+}
+
+.info-description{
+    color: var(--title-color);
+}
+
+.stats-box{
+    border: 1px solid var(--border-color);
+    padding: 1.25rem 2rem 1.25rem;
+    border-radius: 0.5rem;
+}
+
+.stats-no{
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.25rem;
+}
+
+.stats-title {
+    font-size: var(--small-font-size);
+    line-height: 1.5;
+    padding-left: 2.75rem;
+    position: relative;
+}
+
+.stats-title::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background-color: var(--text-color);
+}
+
+.separator {
+    max-width: 450px;
+    border-top: 1px solid var(--border-color);
+    margin: 4.5rem auto;
+}
+
 /*========== Skills ==========*/
+
 
 /*========== Resume ==========*/
 
