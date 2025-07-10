@@ -4,27 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== REMIXICON ===============-->
+    <!--REMIXICON-->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="Portafolio/css/styles.css" />
-
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio Website Yuliexy</title>
   </head>
   <body>
-    <!--=============== NAVBAR ===============-->
 
-    <!--=============== MAIN ===============-->
+    <!--Navbar-->
+    <nav class="nav">
+        <div class="nav-menu">
+            <ul class="nav-list grid">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active-link">
+                        <i class="ri-home-heart-line nav-icon"></i>
+                        <h3 class="nav-name">Home</h3>
+                    </a>
+                </li>
 
-    <!--=============== HOME ===============-->
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <i class="ri-user-heart-line nav-icon"></i>
+                        <h3 class="nav-name">About</h3>
+                    </a>
+                </li>
 
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">
+                        <i class="ri-folder-user-line nav-icon"></i>
+                        <h3 class="nav-name">Portafolio</h3>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <i class="ri-mail-ai-line nav-icon"></i>
+                        <h3 class="nav-name">Contacto</h3>
+                    </a>
+                </li>
+            </ul>
+
+            <i class="ri-close-circle-line nav-close"></i>
+        </div>
+
+        <div class="nav-toggle">
+            <i class="ri-menu-search-line"></i>
+        </div>
+    </nav>
+
+    <!--Main-->
+    <main class="main">
+    <!--Home-->
+        <section class="home-container grid">
+            <img src="Dimas Torrealba.jpg" alt="Yuliexy Lisseth Dimas Torrealba" class="home-img" />
+
+            <div class="home-container">
+                <h1 class="home-title">
+                    <span>Me llamo Yuliexy Lisseth Dimas Torrealba</span>  <br>
+                </h1>
+                <p class="home-description">
+                    Soy estudiante de ingeniería de Sistemas, apasionada por la programación y el diseño web. 
+                    Me encanta aprender nuevas tecnologías y crear soluciones innovadoras.
+                </p>
+                <a href="about.html" class="button">
+                    More about me
+                    <span class="button-icon">
+                        <i class="ri-arrow-right-circle-line "></i>
+                    </span>
+                </a>
+            </div>
+            <div class="color-block"></div>
+        </section>
+    </main>
     <!--=============== STYLE SWITCHER ===============-->
 
     <!--=============== MAIN JS ===============-->
-    <script src="Portafolio/js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

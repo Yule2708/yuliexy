@@ -1,9 +1,9 @@
-/*=============== GOOGLE FONTS ===============*/
+/*GOOGLE FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700;800&display=swap');
 
-/*=============== VARIABLES CSS ===============*/
+/*Variables CSS ===============*/
 :root {
-  /*========== Colors ==========*/
+  /*Colores*/
   --hue: 271;
   --first-color: hsl(var(--hue), 76%, 53%);
   --title-color: hsl(var(--hue), 4%, 26%);
@@ -13,10 +13,10 @@
   --border-color: hsl(var(--hue), 4%, 91%);
   --white-color: hsl(var(--hue), 4%, 100%);
 
-  /*========== Font family ==========*/
+  /*Tipo de letra*/
   --body-font: 'Montserrat Alternates', sans-serif;
 
-  /*========== Font sizes ==========*/
+  /*font size*/
   --h1-font-size: 3.5rem;
   --h2-font-size: 3rem;
   --h3-font-size: 1.5rem;
@@ -25,7 +25,7 @@
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
 
-  /*========== Font weight ==========*/
+  /*Font weight*/
   --weight-500: 500;
   --weight-600: 600;
   --weight-700: 700;
@@ -36,7 +36,7 @@
 @media screen and (max-width: 1208px) {
 }
 
-/*=============== BASE ===============*/
+/*BASE*/
 * {
   margin: 0;
   padding: 0;
@@ -95,13 +95,195 @@ img {
 
 /*=============== Variables Dark theme ===============*/
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/*REUSABLE CSS CLASSES*/
+
+.button{
+    display: inline-block;
+    color: var(--title-color);
+    border: 1px solid var(--first-color);
+    padding: 1.25rem 4.5rem 1.25rem 2rem;
+    border-radius: 2rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-600);
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s;
+}
+
+.button:hover{
+    color: var(--white-color);
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--first-color);
+    border-radius: inherit;
+    z-index: -10;
+    transform: translateX(100%);
+    transition: transform 0.3s;
+}
+
+.button:hover::before{
+    transform: translateX(0);
+}
+
+.button-icon{
+    position: absolute;
+    inset: -1px -1px -1px auto;
+    background-color: var(--first-color);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center ;
+}
+
+.section{
+    padding-block: 4rem;
+}
+
+.section{
+    font-size: var(--first-color);
+}
 
 /*=============== LAYOUT ===============*/
 
-/*=============== NAVBAR ===============*/
+.grid{
+    display: grid;
+}
 
+.container{
+    max-width: 1208px;
+    margin-inline: auto;
+    padding-inline:1.25rem ;
+}
+
+/*NAVBAR*/
+
+.nav{
+    position: fixed;
+    inset-block: 0;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-list{
+    row-gap: 1.25rem;
+}
+
+.nav-link {
+    background-color: var(--container-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.nav-link:hover,
+.active-link {
+    background-color: var(--first-color);
+}
+
+.nav-icon {
+    color: var(--title-color);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover .nav-icon,
+.active-link .nav-icon {
+    color: var(--white-color);
+}
+
+.nav-name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--first-color);
+    height: 100%;
+    padding-inline:1.75rem 2.75rem; 
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-600);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -10;
+    transition: opacity 0.3s, visibility 0.3s, right 0.3s;
+}
+
+.nav-link:hover .nav-name {
+    opacity: 1;
+    visibility: visible;
+    right: 0.5rem;
+}
+
+.nav-close,
+.nav-toggle{
+    display: none;
+}
 /*=============== HOME ===============*/
+.home-container{
+    grid-template-columns: 4.75fr 7.25fr;
+    align-items: center;
+    column-gap: 10rem;
+    padding: 2.5rem; 
+    min-height: 100vh;
+}
+
+.home-img{
+    height: calc(100vh - 5rem);
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    z-index: 10;
+}
+
+.home-title{
+    font-size: var(--h1-font-size);
+    padding-left: 4.25rem;
+    position: relative;
+}
+
+.home-title span{
+    color: var(--first-color);
+}
+
+.home-title::before{
+    content: '';
+    position: absolute;
+    top: 22%;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    border-radius: 0.5rem;
+    background-color: var(--first-color);
+}
+
+.home-description{
+    max-width: 600px;
+    margin-block: 1.5rem 2.5rem;
+}
+
+.color-block{
+    position: fixed;
+    width: 30%;
+    height: 150%;
+    background-color: var(--first-color);
+    transform: rotate(-16deg);
+    top: -12%;
+    left: -12%;
+}
 
 /*=============== ABOUT ===============*/
 
