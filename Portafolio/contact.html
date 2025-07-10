@@ -4,23 +4,159 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== REMIXICON ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <!--REMIXICON-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <title>Portfolio Website Lucy</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portfolio Website Yuliexy</title>
   </head>
   <body>
-    <!--=============== NAVBAR ===============-->
 
-    <!--=============== MAIN ===============-->
+     <!--Navbar-->
+    <nav class="nav">
+        <div class="nav-menu">
+            <ul class="nav-list grid">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="ri-home-heart-line nav-icon"></i>
+                        <h3 class="nav-name">Home</h3>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <i class="ri-user-heart-line nav-icon"></i>
+                        <h3 class="nav-name">About</h3>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">
+                        <i class="ri-folder-user-line nav-icon"></i>
+                        <h3 class="nav-name">Portafolio</h3>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active-link">
+                        <i class="ri-mail-ai-line nav-icon"></i>
+                        <h3 class="nav-name">Contacto</h3>
+                    </a>
+                </li>
+            </ul>
+
+            <i class="ri-close-circle-line nav-close"></i>
+        </div>
+
+        <div class="nav-toggle">
+            <i class="ri-menu-search-line"></i>
+        </div>
+    </nav>
+
+    <!--Main-->
+    <main class="main">
 
     <!--=============== CONTACT ===============-->
+      <section class="contact section">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <div class="contact-container grid">
+          <div class="contact-content grid">
+            <div class="contact-card">
+            <span class="contact-icon">
+              <i class="ri-map-pin-user-line"></i>
+            </span>
+
+            <div>
+              <h3 class="contact-title">Address </h3>
+              <p class="contact-data">Venezuela, Estado Zulia,
+                 Municipio San Francisco, <br> Urbanizacion El Soler <br>
+                lote: 16, manzana 5, calle 204, casa 95</p>
+            </div>
+            </div>
+
+            <div class="contact-card">
+            <span class="contact-icon">
+              <i class="ri-user-heart-line"></i>
+            </span>
+
+            <div>
+              <h3 class="contact-title">Freelance</h3>
+              <p class="contact-data">Available Right Now</p>
+            </div>
+            </div>
+
+            <div class="contact-card">
+            <span class="contact-icon">
+              <i class="ri-mail-ai-line"></i>
+            </span>
+
+            <div>
+              <h3 class="contact-title">Email</h3>
+              <p class="contact-data">yuliexydimasld@gmail.com</p>
+            </div>
+            </div>
+
+            <div class="contact-card">
+            <span class="contact-icon">
+              <i class="ri-phone-line"></i>
+            </span>
+
+            <div>
+              <h3 class="contact-title">Phone</h3>
+              <p class="contact-data">+584146685550</p>
+            </div>
+            </div>
+            </div>
+              <from action="" class="contact-from grid">
+            <div class="contact-group grid">
+              <div class="contact-from-div">
+                <label for="" class="contact-from-label">
+                  Your Full Name <b>*</b>
+                </label>
+
+                <input type="text" class="contact-from-input">
+              </div>
+
+              <div class="contact-from-div">
+                <label for="" class="contact-from-label">
+                  Your Email Address <b>*</b>
+                </label>
+
+                <input type="email" class="contact-from-input">
+              </div>
+
+              <div class="contact-from-div">
+                <label for="" class="contact-from-label">
+                  Your Subject <b>*</b>
+                </label>
+
+                <input type="text" class="contact-from-input">
+              </div>
+
+              <div class="contact-from-div">
+                <label for="" class="contact-from-label">
+                  Your Message <b>*</b>
+                </label>
+
+                <textarea class="contact-from-input contact-from-area"></textarea>
+              </div>
+
+              <button class="button contact-button">
+                Send Message
+                <span class="button-icon">
+                  <i class="ri-mail-send-line"></i>
+                </span>
+              </button>
+
+              <p class="contact-message">Write all the input fields</p>
+            </div>
+              </from>
+
+        </div>
+      </section>
+    </main>
 
     <!--=============== STYLE SWITCHER ===============-->
 
@@ -30,10 +166,10 @@
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <!--MAIN JS-->
+     <script src="js/main.js"></script>
 
-    <!--=============== CONTACT JS ===============-->
-    <script src="assets/js/contact.js"></script>
+    <!--CONTACT JS-->
+      <script src="js/contact.js"></script>
   </body>
 </html>

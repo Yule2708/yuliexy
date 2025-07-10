@@ -4,27 +4,129 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== REMIXICON ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <!--REMIXICON-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <title>Portfolio Website Lucy</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portfolio Website Yuliexy</title>
   </head>
   <body>
-    <!--=============== NAVBAR ===============-->
 
-    <!--=============== MAIN ===============-->
+       <!--Navbar-->
+    <nav class="nav">
+        <div class="nav-menu">
+            <ul class="nav-list grid">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="ri-home-heart-line nav-icon"></i>
+                        <h3 class="nav-name">Home</h3>
+                    </a>
+                </li>
 
-    <!--=============== PORTFOLIO ===============-->
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <i class="ri-user-heart-line nav-icon"></i>
+                        <h3 class="nav-name">About</h3>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link active-link">
+                        <i class="ri-folder-user-line nav-icon"></i>
+                        <h3 class="nav-name">Portafolio</h3>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <i class="ri-mail-ai-line nav-icon"></i>
+                        <h3 class="nav-name">Contacto</h3>
+                    </a>
+                </li>
+            </ul>
+
+            <i class="ri-close-circle-line nav-close"></i>
+        </div>
+
+        <div class="nav-toggle">
+            <i class="ri-menu-search-line"></i>
+        </div>
+    </nav>
+
+    <!--Main-->
+    <main class="main">
+      <section class="portafolio section">
+        <h2 class="section-title">My <span>Portafolio</span></h2>
+
+        <div class="portafolio-container container grid">
+          <article class="portafolio-card">
+            <a href="#" class="portafolio-img-wrapper">
+              <img src="img/Piñateria.jpg" alt="Iniciar seccion de una Piñateria" class="portafolio-img">
+            </a>
+
+            <h3 class="portafolio-title">Pagina web de una Piñateria</h3>
+            <p class="portafolio-description">Proyecto universitaria</p>
+
+            <div class="portafolio-skills">
+              <img src="img/HTML.png" alt="" class="portafolio-skill">
+              <img src="img/CSS.png" alt="" class="portafolio-skill">
+            </div>
+
+            <a href="#" class="portatafolio-link">
+              <i class="ri-links-fill link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+
+           <article class="portafolio-card">
+            <a href="https://yule2708.github.io/yuliexy/" class="portafolio-img-wrapper">
+              <img src="img/pagina_web.jpg" alt="pagina de una agencia de viajes" class="portafolio-img">
+            </a>
+
+            <h3 class="portafolio-title">Pagina web</h3>
+            <p class="portafolio-description">Proyecto del curso</p>
+
+            <div class="portafolio-skills">
+              <img src="img/HTML.png" alt="" class="portafolio-skill">
+              <img src="img/CSS.png" alt="" class="portafolio-skill">
+            </div>
+
+            <a href="https://yule2708.github.io/yuliexy/" class="portatafolio-link">
+              <i class="ri-links-fill link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+
+           <article class="portafolio-card">
+            <a href="https://yule2708.github.io/yuliexy/Modulo-%202/calculadora/index.html" class="portafolio-img-wrapper">
+              <img src="img/calculadora.jpg" alt="" class="portafolio-img">
+            </a>
+
+            <h3 class="portafolio-title">Calculadora Cientifica</h3>
+            <p class="portafolio-description">Proyecto de curso</p>
+
+            <div class="portafolio-skills">
+              <img src="img/HTML.png" alt="Logo de html" class="portafolio-skill">
+              <img src="img/CSS.png" alt="Logo de css" class="portafolio-skill">
+              <img src="img/Javascript.png" alt="Logo de Javascript" class="portafolio-skill">
+            </div>
+
+            <a href="https://yule2708.github.io/yuliexy/Modulo-%202/calculadora/index.html" class="portatafolio-link">
+              <i class="ri-links-fill link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+    <!--Portafolio-->
+    </main>
 
     <!--=============== STYLE SWITCHER ===============-->
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <!--MAIN JS-->
+      <script src="js/main.js"></script>
   </body>
 </html>
