@@ -305,7 +305,6 @@ img {
     font-size: var(--h3-font-size);
     font-weight: var(--weight-700);
     margin-bottom: 3rem;
-    text-align: center;
 }
 
 .info-list{
@@ -352,16 +351,16 @@ img {
 }
 
 .separator {
-    max-width: 450px;
+    max-width: 550px;
     border-top: 1px solid var(--border-color);
     margin: 4.5rem auto;
 }
 
-/*========== Skills ==========*/
-
-.skills-container {
-    grid-template-columns: repeat(2, 1fr);
+.subtitle-center {
+    text-align: center;
 }
+
+/*========== Skills ==========*/
 
 .skills-title {
     font-size: var(--large-font-size);
@@ -404,6 +403,76 @@ img {
 }
 
 /*========== Resume ==========*/
+
+.resumen-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.75rem;
+}
+
+.resumen-group {
+    row-gap: 3rem;
+}
+
+.resumen-item {
+    padding-left: 3.75rem;
+    position: relative;
+}
+
+.resumen-item::before {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 1.25rem;
+    border-left: 1px solid var(--border-color);
+}
+
+.resumen-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--white-color);
+    background-color: var(--first-color);
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: var(--large-font-size);
+}
+
+.resumen-data {
+    background-color:  var(--container-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: var(--smaller-font-size);
+}
+
+.resumen-subtitle {
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-700);
+    margin-block: 1.25rem 0.75rem;
+}
+
+.resumen-subtitle span { 
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-500);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.resumen-subtitle span::before{
+    content: '';
+    position: absolute;
+    top:0.5rem;
+    left: 0.5rem;
+    width: 10px;
+    height: 2px;
+    background-color: var(--text-color);
+}
+
+.resumen-desciption{
+    font-size: var(--small-font-size);
+}
 
 /*=============== PORTFOLIO ===============*/
 
