@@ -145,8 +145,14 @@ img {
     padding-block: 4rem;
 }
 
-.section{
-    font-size: var(--first-color);
+.section-title{
+    font-size: var(--h1-font-size);
+    text-align: center;
+    margin-bottom: 4.5ren;
+}
+
+.section-title span{
+    color: var(--first-color);
 }
 
 /*=============== LAYOUT ===============*/
@@ -232,7 +238,7 @@ img {
 .nav-toggle{
     display: none;
 }
-/*=============== HOME ===============*/
+/*Home*/
 .home-container{
     grid-template-columns: 4.75fr 7.25fr;
     align-items: center;
@@ -285,7 +291,26 @@ img {
     left: -12%;
 }
 
-/*=============== ABOUT ===============*/
+/*About*/
+
+.about-container,
+.info-list,
+.stats {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 1.75rem;
+}
+
+.section-subtitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--weight-700);
+    margin-bottom: 3rem;
+}
+
+.info-list{
+    row-gap: 1.25rem;
+    margin-bottom: 2.25rem;
+}
 
 /*========== Skills ==========*/
 
